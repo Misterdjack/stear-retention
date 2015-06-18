@@ -39,7 +39,7 @@
         <div class="row center">
 
           <!-- Launch Form Modal -->
-          <a href="#modal1" id="download-button" class="btn-large modal-trigger waves-effect waves-light light-blue accent-1">Get Started and Request More Info</a>
+          <a href="#modal1" id="download-button" class="btn-large modal-trigger waves-effect waves-light teal darken-2">Get Started and Request More Info</a>
           
           <!-- Form Modal -->
           <div id="modal1" class="modal">
@@ -81,17 +81,18 @@
                         <label for="textarea1">Other requests</label>
                       </div>
                     </form>
+                    <br><br>
 
                     <!-- Text inputs -->
                     <div class="input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">First Name</label>
+                      <input id="icon_first" type="text" class="validate">
+                      <label for="icon_first">First Name</label>
                     </div>
                     <div class="input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Last Name</label>
+                      <input id="icon_last" type="text" class="validate">
+                      <label for="icon_last">Last Name</label>
                     </div>
                     <div class="input-field col s12">
                       <i class="mdi-social-domain prefix"></i>
@@ -99,9 +100,19 @@
                       <label for="icon_institution">Institution</label>
                     </div>
                     <div class="input-field col s12">
+                      <i class="mdi-action-account-circle prefix"></i>
+                      <input id="icon_title" type="text" class="validate">
+                      <label for="icon_title">Title</label>
+                    </div>
+                    <div class="input-field col s12">
                       <i class="mdi-communication-phone prefix"></i>
                       <input id="icon_telephone" type="tel" class="validate">
                       <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="mdi-communication-email prefix"></i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
                     </div>
                   </div>
                   <!-- row -->
@@ -128,33 +139,35 @@
   <!-- index banner -->
 
   <div class="container">
+    <br><br>
+    <h3 class="header center">IDENTIFY / ENGAGE / SUCCEED</h2>
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 l4">
           <div class="icon-block">
-            <h2 class="center red-text text-accent-2"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center light-green-text text-accent-3">Speeds up development</h5>
+            <h2 class="center red-text text-accent-2"><i class="mdi-social-school"></i></h2>
+            <h5 class="center light-green-text text-accent-4">America’s Knowledge-Based Economy</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">Our country faces a new economic reality, the emergence of the knowledge-based economy. This economy, these “high-value” jobs, require the skills and knowledge attained through collegiate degree programs. Most of these careers did not exist in 1980 and the rate of change is accelerating. Higher education must prepare an increasing percentage of all students for these high value careers.</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 l4">
           <div class="icon-block">
             <h2 class="center red-text text-accent-2"><i class="mdi-social-group"></i></h2>
-            <h5 class="center light-blue-text text-accent-1">User Experience Focused</h5>
+            <h5 class="center blue-text text-accent-2">Student’s Goals</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">*Students attend college as an investment in their future. They want quality training. They often need help and direction. They need someone, one person, in the campus community to reach out to them at a critical point in their college careers. This point may not occur until their senior year. Most often it is in the first six weeks of their freshman year to help them transition to college. Can you identify these students?</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 l4">
           <div class="icon-block">
-            <h2 class="center red-text text-accent-2"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center lime-text text-accent-2">Easy to work with</h5>
+            <h2 class="center red-text text-accent-2"><i class="mdi-maps-local-atm"></i></h2>
+            <h5 class="center purple-text text-darken-3">Importance Of Retention Efforts</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">Student persistence and retention is one of the most important issues facing higher education today. Each student who drops out costs a school thousands of dollars in lost investment and future revenue. Whatever the demographics of your students, make the effort to reach out and engage them. The United States is competing globally for these high value jobs and careers and our higher education system must prepare their students for this reality.</p>
           </div>
         </div>
       </div>
@@ -176,28 +189,37 @@
 
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send red-text text-accent-2"></i></h3>
-         
-            <a class="waves-effect waves-light btn modal-trigger light-blue accent-1" href="#modal2">Program Overview</a>
-
-            <!-- Modal Structure -->
-            <div id="modal2" class="modal">
-              <div class="modal-content">
-                <h4>Overview</h4>
-                <object class="overview materialboxed responsive-video" type="application/x-shockwave-flash" 
-                data="http://www.stear-retention.com/swf/STEAR_movie2011.swf" 
-                width="100%" height="200px">
-                </object>
+          <h4 class="blue-text text-accent-3">Services</h4>
+          <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Strategic Retention Planning</div>
+              <div class="collapsible-body">
+                <p>Increasing Admissions Or ‘Front-Loading’ Is Not An Effective Retention Strategy. New & Transfer Students Must Have The Ability To Complete The Course Work And Graduate. Colleges Must Engage Students And Provide The Support And Services During The Transition And Through Graduation.</p>
+                <p>Your Retention Plan Should Be Tailored For Your Students, Goals And Staffing. Goals Are Set For Three Primary Objective, Immediate/Short Term, Intermediate And Ongoing., Long Term Mission And Culture.</p>
               </div>
-              <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Campus Integration Analysis</div>
+              <div class="collapsible-body">
+                <p>STEAR Will Coordinate Staff And Offices To Engage And Assist The Students. Academic And Student Affairs Have One Point In Common, The Student. Research Universities Can Not Exist Without Students.</p>
+                <p>The Campus Approach Includes Building A Matrix Of Existing Programs. Athletic Programs For Example. Coaches See The Students Every Day And Have Motivation To Achieve Academic Success., Work Together And Fill The Seats In Your Seminars, Workshops And Learning Centers.</p>
               </div>
-            </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Student Action Plan</div>
+              <div class="collapsible-body"><p>Once Students Who May Be At Risk Are Identified Through Data, Surveys Or The Early Alert System, We Build A Student Action Plan Tailored To The Needs Of Each Student. The Plan Addressed The Immediate Course Work, GPA, Progression Steps And Skills. 
+              Students Can Be Assigned To Workshops, Learning Centers, Tutors, Mentors And Counselors.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Data System Design And Development</div>
+              <div class="collapsible-body"><p>Our Extensive Data Background Will Help You Design And Build System To Comply With Mandates, Programs And Accreditation Requirements. Our Expertise In Application Design And In Building Web And Network Applications Will Bolster Your Existing Systems. We Integrate With SIS, IT And HR At The Database Level To Simply Implementation And Ease Of Use. </p></div>
+            </li>
+          </ul>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 
@@ -218,19 +240,31 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send red-text text-accent-2"></i></h3>
-          <h4 class="light-blue-text text-accent-1">Pilot Programs</h4>
+          <h4 class="blue-text text-accent-3">Pilot Programs</h4>
           <ul class="collapsible popout" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>2012 Pilot Programs</div>
+              <div class="collapsible-body">
+                <p>Your Institution May Be Facing Budget Cuts During A Period Of Increasing Enrollment. STEAR Retention Understands The Current Economic Difficulties And Is Offering Several Pilot Programs For 2012-2013 To Help You Through This Difficult Time. Our Program Will Help Your Staff With Time Management And Online Tools To Interact With A Larger Number Of Students.</p>
+                <p>Sustainable enrollment increases, and the associated revenues are attainable if students persist. We will help you implement a program to help more students persist past the freshman year and guide them on the path to graduation.
+                These programs are designed for several different cohorts. Your institution may be eligible for more than one cohort. Please contact us to discuss your populations.</p>
+              </div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Campus Integration Analysis</div>
+              <div class="collapsible-body">
+                <p>STEAR Will Coordinate Staff And Offices To Engage And Assist The Students. Academic And Student Affairs Have One Point In Common, The Student. Research Universities Can Not Exist Without Students.</p>
+                <p>The Campus Approach Includes Building A Matrix Of Existing Programs. Athletic Programs For Example. Coaches See The Students Every Day And Have Motivation To Achieve Academic Success., Work Together And Fill The Seats In Your Seminars, Workshops And Learning Centers.</p>
+              </div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Student Action Plan</div>
+              <div class="collapsible-body"><p>Once Students Who May Be At Risk Are Identified Through Data, Surveys Or The Early Alert System, We Build A Student Action Plan Tailored To The Needs Of Each Student. The Plan Addressed The Immediate Course Work, GPA, Progression Steps And Skills. 
+              Students Can Be Assigned To Workshops, Learning Centers, Tutors, Mentors And Counselors.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"></i>Data System Design And Development</div>
+              <div class="collapsible-body"><p>Our Extensive Data Background Will Help You Design And Build System To Comply With Mandates, Programs And Accreditation Requirements. Our Expertise In Application Design And In Building Web And Network Applications Will Bolster Your Existing Systems. We Integrate With SIS, IT And HR At The Database Level To Simply Implementation And Ease Of Use. </p></div>
             </li>
           </ul>
         </div>
@@ -249,7 +283,7 @@
     <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 4"></div>
   </div>
 
-  <footer class="page-footer green accent-3">
+  <footer class="page-footer blue accent-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -260,15 +294,6 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
@@ -277,11 +302,19 @@
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contact</h5>
+          <ul>
+            <li class="white-text">Tel: (877) 325 - 3113</li>
+            <li class="white-text">Louisville, CO 80027</li>
+            <li class="white-text">FAX: (877) 253 - 4990</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      2015 Copywrite - <a class="red-text" href="https://github.com/Misterdjack">Misterdjack</a>
+      2015 Copywrite - <a href="https://github.com/Misterdjack">Misterdjack</a>
       </div>
     </div>
   </footer>
