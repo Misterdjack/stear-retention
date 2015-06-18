@@ -1,11 +1,14 @@
-<!-- Stear Retention Program © Designed and developed by Darren Jack https://github.com/Misterdjack  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Stear Retention</title>
-
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
   <!-- CSS  -->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -29,30 +32,109 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center green-text text-accent-3">STEAR RETENTION</h1>
+        <h1 class="header center">STEAR RETENTION</h1>
         <div class="row center">
-          <h5 class="header col s12 light red-text">The Student Tracking Early Alert Retention System, (S.T.E.A.R.) is a robust, campus-wide web-based tool designed to focus on Student Success.</h5>
+          <h5 class="header col s12 light">The Student Tracking Early Alert Retention System, (S.T.E.A.R.) is a robust, campus-wide web-based tool designed to focus on Student Success.</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light green accent-3">Get Started</a>
+
+          <!-- Launch Form Modal -->
+          <a href="#modal1" id="download-button" class="btn-large modal-trigger waves-effect waves-light light-blue accent-1">Get Started and Request More Info</a>
+          
+          <!-- Form Modal -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h3>Request more info</h4>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+
+                    <!-- Checkboxes -->
+                    <form action="#">
+                      <h5 class="red-text text-accent-2">Request Type - Check all that apply</h4>
+                      <p class="">
+                        <input type="checkbox" id="web-demo" />
+                        <label for="web-demo">Request a Web Demonstration</label>
+                      </p>
+                      <p class=" light-blue-text text-accent-1">
+                        <input type="checkbox" id="early-alert" />
+                        <label for="early-alert">Request Early Alert Information</label>
+                      </p>
+                      <p class=" light-blue-text text-accent-1">
+                        <input type="checkbox" id="partnership" />
+                        <label for="partnership">Learn About Joint Development Partnership</label>
+                      </p>
+                      <p class=" light-blue-text text-accent-1">
+                        <input type="checkbox" id="site-visit" />
+                        <label for="site-visit">Contact Sales / Schedule A Site Visit</label>
+                      </p>
+                      <p class=" light-blue-text text-accent-1">
+                        <input type="checkbox" id="retention" />
+                        <label for="retention">Request Retention Services</label>
+                      </p>
+                      <p class=" light-blue-text text-accent-1">
+                        <input type="checkbox" id="other" />
+                        <label for="other">Other (please specify in text area below</label>
+                      </p>
+                      <div class="input-field col s12">
+                        <textarea id="other-text-area" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Other requests</label>
+                      </div>
+                    </form>
+
+                    <!-- Text inputs -->
+                    <div class="input-field col s6">
+                      <i class="mdi-action-account-circle prefix"></i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="mdi-action-account-circle prefix"></i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="mdi-social-domain prefix"></i>
+                      <input id="icon_institution" type="text" class="validate">
+                      <label for="icon_institution">Institution</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="mdi-communication-phone prefix"></i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Telephone</label>
+                    </div>
+                  </div>
+                  <!-- row -->
+                </form>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- modal content -->
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+          <!-- modal1 -->
+
         </div>
+        <!-- row center -->
         <br><br>
 
       </div>
+      <!-- container -->
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
   </div>
-
+  <!-- index banner -->
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center red-text text-accent-2"><i class="mdi-image-flash-on"></i></h2>
+            <h5 class="center light-green-text text-accent-3">Speeds up development</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
@@ -60,8 +142,8 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-social-group"></i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center red-text text-accent-2"><i class="mdi-social-group"></i></h2>
+            <h5 class="center light-blue-text text-accent-1">User Experience Focused</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
@@ -69,8 +151,8 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center red-text text-accent-2"><i class="mdi-action-settings"></i></h2>
+            <h5 class="center lime-text text-accent-2">Easy to work with</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
@@ -85,7 +167,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">It takes a campus...</h5>
         </div>
       </div>
     </div>
@@ -97,12 +179,25 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
+          <h3><i class="mdi-content-send red-text text-accent-2"></i></h3>
+         
+            <a class="waves-effect waves-light btn modal-trigger light-blue accent-1" href="#modal2">Program Overview</a>
 
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <h4>Overview</h4>
+                <object class="overview materialboxed responsive-video" type="application/x-shockwave-flash" 
+                data="http://www.stear-retention.com/swf/STEAR_movie2011.swf" 
+                width="100%" height="200px">
+                </object>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
+        </div>
+      </div> 
     </div>
   </div>
 
@@ -111,19 +206,56 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">It takes a campus...</h5>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send red-text text-accent-2"></i></h3>
+          <h4 class="light-blue-text text-accent-1">Pilot Programs</h4>
+          <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">It takes a campus...</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 4"></div>
+  </div>
+
   <footer class="page-footer green accent-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="white-text">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">About Us</h5>
+          <p class="white-text">STEAR Retention is designed to integrate offices across campus to build a holistic, total student focus. Our strategy is to build the best system to meet your retention goals. Retention strategies will vary from institution to institution, but the data behind your efforts will be consolidated and shared.</p>
+          <p class="white-text">We listen and respond to your requests. We work with you and your staff to constantly improve our products and to help you reach your goals. We tie people, processes and technology together.</p>
 
 
         </div>
@@ -149,7 +281,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="red-text" href="http://www.darrencharlesjack.com">Darren Jack</a>
+      2015 Copywrite - <a class="red-text" href="https://github.com/Misterdjack">Misterdjack</a>
       </div>
     </div>
   </footer>
@@ -162,3 +294,5 @@
 
   </body>
 </html>
+
+<!-- Stear Retention Program © Designed and developed by Darren Jack https://github.com/Misterdjack  -->
