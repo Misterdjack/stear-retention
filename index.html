@@ -50,7 +50,7 @@
                   <div class="row">
 
                     <!-- Checkboxes -->
-                    <form action="#">
+                    <form class="cmxform" id="commentForm" method="get" action="">
                       <h5 class="red-text text-accent-2">Request Type - Check all that apply</h4>
                       <p class="">
                         <input type="checkbox" id="web-demo" />
@@ -86,18 +86,18 @@
                     <!-- Text inputs -->
                     <div class="input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_first" type="text" class="validate">
+                      <input id="icon_first" name="name" minlength="2" type="text" class="validate" required>
                       <label for="icon_first">First Name</label>
                     </div>
                     <div class="input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_last" type="text" class="validate">
+                      <input id="icon_last" type="text" class="validate" name="name" minlength="2" required>
                       <label for="icon_last">Last Name</label>
                     </div>
                     <div class="input-field col s12">
                       <i class="mdi-social-domain prefix"></i>
                       <input id="icon_institution" type="text" class="validate">
-                      <label for="icon_institution">Institution</label>
+                      <label for="icon_institution" type="text" required>Institution</label>
                     </div>
                     <div class="input-field col s12">
                       <i class="mdi-action-account-circle prefix"></i>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="input-field col s12">
                       <i class="mdi-communication-email prefix"></i>
-                      <input id="email" type="email" class="validate">
+                      <input id="email" type="email" class="validate" required>
                       <label for="email">Email</label>
                     </div>
                   </div>
@@ -140,34 +140,34 @@
 
   <div class="container">
     <br><br>
-    <h3 class="header center">IDENTIFY | <span class="teal-text text-darken2">ENGAGE</span> | SUCCEED</h2>
+    <h3 class="header center">IDENTIFY | <span class="teal-text text-darken-2">ENGAGE</span> | SUCCEED</h2>
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 l4">
           <div class="icon-block">
             <h2 class="center red-text text-accent-2"><i class="mdi-social-school"></i></h2>
-            <h5 class="center light-green-text text-accent-4">America’s Knowledge-Based Economy</h5>
+            <h5 class="center light-green-text text-accent-4">Country - America’s Knowledge-Based Economy</h5>
 
-            <p class="light">Our country faces a new economic reality, the emergence of the knowledge-based economy. This economy, these “high-value” jobs, require the skills and knowledge attained through collegiate degree programs. Most of these careers did not exist in 1980 and the rate of change is accelerating. Higher education must prepare an increasing percentage of all students for these high value careers.</p>
+            <p class="light">Our country faces a new economic reality, the emergence of the knowledge-based economy. This economy, these “high-value” jobs, require the skills and knowledge attained through collegiate degree programs. The United States is competing globally for these high value jobs and careers and our higher education system must prepare their students for this reality. <span class="light-green-text text-accent-4"> STEAR Retention works with the school administration and key stake holders to identify and assess existing retention programs and to build an effective and responsive retention program. </span></p>
+          </div>
+        </div>
+
+        <div class="col s12 l4">
+          <div class="icon-block">
+            <h2 class="center red-text text-accent-2"><i class="mdi-action-account-balance"></i></h2>
+            <h5 class="center blue-text text-accent-2">College's & Universities</h5>
+
+            <p class="light">Legislatures in 31 states have set goals to increase the overall postsecondary attainment and six year graduation rates.  Colleges must prepare an increasing percentage of all high school graduates for these high value careers. The critical need is to close enrollment and attainment gaps for minority, first-generation, low income students and for working adults. <span class="blue-text text-accent-2">STEAR can help colleges identify and prepare a broader group of students for the rigors of college and to identify struggling students during the term.</span></p>
           </div>
         </div>
 
         <div class="col s12 l4">
           <div class="icon-block">
             <h2 class="center red-text text-accent-2"><i class="mdi-social-group"></i></h2>
-            <h5 class="center blue-text text-accent-2">Student’s Goals</h5>
+            <h5 class="center purple-text text-darken-3">Students</h5>
 
-            <p class="light">*Students attend college as an investment in their future. They want quality training. They often need help and direction. They need someone, one person, in the campus community to reach out to them at a critical point in their college careers. This point may not occur until their senior year. Most often it is in the first six weeks of their freshman year to help them transition to college. Can you identify these students?</p>
-          </div>
-        </div>
-
-        <div class="col s12 l4">
-          <div class="icon-block">
-            <h2 class="center red-text text-accent-2"><i class="mdi-maps-local-atm"></i></h2>
-            <h5 class="center purple-text text-darken-3">Importance Of Retention Efforts</h5>
-
-            <p class="light">Student persistence and retention is one of the most important issues facing higher education today. Each student who drops out costs a school thousands of dollars in lost investment and future revenue. Whatever the demographics of your students, make the effort to reach out and engage them. The United States is competing globally for these high value jobs and careers and our higher education system must prepare their students for this reality.</p>
+            <p class="light">Students attend college as an investment in their future. They want quality training and they must believe their college will help them achieve their goals. Students feel connected to an institution that is vested in their success.  An increasing number of students need additional support to prepare for and transition to college. Student’s often help and direction at a critical point in their career.<span class="purple-text text-darken-3"> STEAR enables the student’s success team to help the student understand the steps to success, overcome obstacles and persist through graduation.</span></p>
           </div>
         </div>
       </div>
@@ -339,8 +339,9 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
