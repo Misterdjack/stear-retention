@@ -74,6 +74,7 @@ p {
 .footer-color {
   background-color: #EA0087;
 }
+
 /* Media Queries*/
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
