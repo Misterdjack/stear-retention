@@ -11,14 +11,14 @@ nav .brand-logo {
   color: #444;
 }
 
-/*nav {
+nav {
   position: fixed;
-  opacity: .4;
+  opacity: .5;
 }
 
 nav:hover {
   opacity: 1;
-}*/
+}
 
 
 #logo-container {
@@ -37,6 +37,10 @@ nav:hover {
 
 p {
   line-height: 2rem;
+}
+
+.collapsible-header {
+  height: auto;
 }
 
 /* label color */
@@ -96,6 +100,29 @@ p {
 
   .parallax-container {
     min-height: 469px;
+  }
+
+  #logo-container {
+  height: 0;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+@media only screen and (max-width : 404px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .parallax-container {
+    min-height: 500px;
   }
 
   #logo-container {
