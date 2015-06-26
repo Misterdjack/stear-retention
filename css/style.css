@@ -82,7 +82,6 @@ p {
 /* Media Queries*/
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
     top: 40%;
   }
   #index-banner .section {
@@ -94,11 +93,6 @@ p {
 }
 
 @media only screen and (max-width : 644px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-
   #index-banner .section {
     top: 0;
   }
@@ -122,11 +116,6 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 404px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  
   #index-banner .section {
     top: 0;
   }
