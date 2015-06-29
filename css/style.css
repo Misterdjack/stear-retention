@@ -13,7 +13,7 @@ nav .brand-logo {
 
 nav {
   position: fixed;
-  opacity: .9;
+  opacity: .8;
 }
 
 nav:hover {
@@ -39,24 +39,28 @@ p {
   line-height: 2rem;
 }
 
+/*#input_text {
+  color: #212121;
+}*/
+
 .collapsible-header {
   height: auto;
 }
 
 /* label color */
- .input-field label {
-   color: ##EA0087;
+/* .input-field label {
+   color: #EA0087;
  }
- /* label focus color */
- .input-field input[type=text]:focus + label {
-   color: ##EA0087;
+*/ /* label focus color */
+/* .input-field input[type=text]:focus + label {
+   color: #EA0087;
  }
- /* label underline focus color */
- .input-field input[type=text]:focus {
+*/ /* label underline focus color */
+/* .input-field input[type=text]:focus {
    border-bottom: 1px solid ##EA0087;
    box-shadow: 0 1px 0 0 ##EA0087;
  }
-
+*/
 .button-collapse {
   color: #26a69a;
 }

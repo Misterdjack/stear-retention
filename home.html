@@ -58,75 +58,74 @@
           
           <!-- Form Modal -->
           <div id="modal1" class="modal">
-            <div class="modal-content ">
+            <div class="modal-content">
               <h3 class="teal-text text-darken-2">Request more info</h4>
               <div class="row">
-                <form class="col s12">
+                <form class="col s12 cmxform" id="commentForm" method="get" action="">
                   <div class="row">
-
                     <!-- Checkboxes -->
-                    <form class="cmxform" id="commentForm" method="get" action="">
-                      <h5 class="red-text text-accent-2">Request Type - Check all that apply</h4>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="web-demo" />
-                        <label for="web-demo">Request a Web Demonstration</label>
-                      </p>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="early-alert" />
-                        <label for="early-alert">Request Early Alert Information</label>
-                      </p>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="partnership" />
-                        <label for="partnership">Learn About Joint Development Partnership</label>
-                      </p>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="site-visit" />
-                        <label for="site-visit">Contact Sales / Schedule A Site Visit</label>
-                      </p>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="retention" />
-                        <label for="retention">Request Retention Services</label>
-                      </p>
-                      <p class="gray-text text-darken-4">
-                        <input type="checkbox" id="other" />
-                        <label for="other">Other (please specify in text area below</label>
-                      </p>
+                    <h5 class="red-text text-accent-2">Request Type - Check all that apply</h4>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="web-demo" />
+                      <label for="web-demo">Request a Web Demonstration</label>
+                    </p>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="early-alert" />
+                      <label for="early-alert">Request Early Alert Information</label>
+                    </p>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="retention" />
+                      <label for="retention">Request Retention Services</label>
+                    </p>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="site-visit" />
+                      <label for="site-visit">Contact Sales / Schedule A Site Visit</label>
+                    </p>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="partnership" />
+                      <label for="partnership">Learn About Joint Development Partnership</label>
+                    </p>
+                    <p class="grey-text text-darken-4 col s6">
+                      <input type="checkbox" id="other" />
+                      <label for="other">Other (please specify in text area below)</label>
+                    </p>
+                    <div class="row grey-text text-darken-4">
                       <div class="input-field col s12">
-                        <textarea id="other-text-area" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Other requests</label>
+                        <input id="input_text" type="text" length="400">
+                        <label for="input_text">Other Requests</label>
                       </div>
-                    </form>
-                    <br><br>
-
+                    </div>
+                  </div>
+                  <div class="row">
                     <!-- Text inputs -->
-                    <div class="input-field col s6">
+                    <div class="grey-text text-darken-4 input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_first" name="name" minlength="2" type="text" class="validate" required>
+                      <input id="icon_first" name="name" minlength="2" type="text" required>
                       <label for="icon_first">First Name</label>
                     </div>
-                    <div class="input-field col s6">
+                    <div class="grey-text text-darken-4 input-field col s6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_last" type="text" class="validate" name="name" minlength="2" required>
+                      <input id="icon_last" type="text" name="name" minlength="2" required>
                       <label for="icon_last">Last Name</label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-social-domain prefix"></i>
-                      <input id="icon_institution" type="text" class="validate">
+                      <input id="icon_institution" type="text">
                       <label for="icon_institution" type="text" required>Institution</label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input id="icon_title" type="text" class="validate">
+                      <input id="icon_title" type="text">
                       <label for="icon_title">Title</label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-communication-phone prefix"></i>
-                      <input id="icon_telephone" type="tel" class="validate">
+                      <input id="icon_telephone" type="tel">
                       <label for="icon_telephone">Telephone</label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-communication-email prefix"></i>
-                      <input id="email" type="email" class="validate" required>
+                      <input id="email" type="email" required>
                       <label for="email">Email</label>
                     </div>
                   </div>
@@ -238,7 +237,7 @@
         <div class="col s12 center">
           <h3><i class="mdi-action-work red-text text-accent-2"></i></h3>
           <h4 class="teal-text text-darken-2">Services</h4>
-          <ul class="collapsible flow-text" data-collapsible="accordion">
+          <ul class="collapsible popout flow-text" data-collapsible="accordion">
             <li>
               <div class="collapsible-header"><i class="mdi-social-school light-green-text text-accent-4"> </i>
                 <p class="mobile">Intrusive Advising and Student Interaction</p>
