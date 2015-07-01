@@ -114,6 +114,10 @@ p {
     font-size: .9em;
   }
 
+  .hidden {
+    display: none;
+  }
+
   #index-banner .section {
     top: 0;
   }
@@ -139,6 +143,10 @@ footer.page-footer {
 @media only screen and (max-width : 404px) {
   p {
     font-size: 1em;
+  }
+
+  .hidden {
+    display: none;
   }
 
   #index-banner .section {
