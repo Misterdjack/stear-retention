@@ -36,7 +36,8 @@ nav:hover {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.5rem;
+  font-size: .7em;
 }
 
 /*#input_text {
@@ -86,8 +87,17 @@ p {
 .margin-collapse {
   margin: 0;
 }
+
+.footer-text {
+  font-size: 1.2em;
+}
+
 /* Media Queries*/
 @media only screen and (max-width : 992px) {
+  p {
+    font-size: .8em;
+  }
+
   .parallax-container .section {
     top: 40%;
   }
@@ -100,6 +110,10 @@ p {
 }
 
 @media only screen and (max-width : 644px) {
+  p {
+    font-size: .9em;
+  }
+
   #index-banner .section {
     top: 0;
   }
@@ -123,6 +137,10 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 404px) {
+  p {
+    font-size: 1em;
+  }
+
   #index-banner .section {
     top: 0;
   }
