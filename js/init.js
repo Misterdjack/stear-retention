@@ -14,17 +14,10 @@
     	        data: $(form).serialize(),
     	        url:"process.php",
     	        success: function() {
-    	            $('#commentForm :input').attr('disabled', 'disabled');
-    	            $('#commentForm').fadeTo( "slow", 0.15, function() {
-    	                $(this).find(':input').attr('disabled', 'disabled');
-    	                $(this).find('label').css('cursor','default');
-    	                $('#success').fadeIn();
-    	            });
+    	            alert('Thank you, your message was sent successfully! We will be in touch shortly');
     	        },
     	        error: function() {
-    	            $('#commentForm').fadeTo( "slow", 0.15, function() {
-    	                $('#error').fadeIn();
-    	            });
+    	            alert('Something went wrong, try refreshing and submitting the form again.');
     	        }
     	    });
     	}
