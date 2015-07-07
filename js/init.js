@@ -12,7 +12,7 @@
     	    $(form).ajaxSubmit({
     	        type:"POST",
     	        data: $(form).serialize(),
-    	        url:"../process.php",
+    	        url:"../index.php",
     	        success: function() {
     	            alert('Thank you, your message was sent successfully! We will be in touch shortly');
     	        },

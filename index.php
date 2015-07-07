@@ -1,7 +1,5 @@
 <?php 
 	
-	include_once("home.html"); 
-
 	// form handler
 	$to = "darrenjack79@yahoo.com"; 
 	$from = $_REQUEST['email']; 
