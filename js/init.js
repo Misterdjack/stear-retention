@@ -12,7 +12,7 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-// Insert into validate as a callback
+// Insert into validate as a callback to use with jQuery form
 // {
 //     	submitHandler: function(form) {
 //     	    $(form).ajaxSubmit({
