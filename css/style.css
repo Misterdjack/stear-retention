@@ -3,7 +3,6 @@
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
  *
- * Made By MaterializeCSS.com
  */
 #form-input {
   margin-top: 8px;
@@ -22,7 +21,6 @@ nav {
 nav:hover {
   opacity: 1;
 }
-
 
 #logo-container {
   width: 15%;
@@ -43,32 +41,16 @@ p {
   font-size: .7em;
 }
 
-/*#input_text {
-  color: #212121;
-}*/
-
 .collapsible-header {
   height: auto;
 }
 
 .modal {
-  width: 85%;
+  width: 80%;
   height: 85%;
+  /*helps with scrolling on iOS devices*/
+  -webkit-overflow-scrolling: touch;
 }
-/* label color */
-/* .input-field label {
-   color: #EA0087;
- }
-*/ /* label focus color */
-/* .input-field input[type=text]:focus + label {
-   color: #EA0087;
- }
-*/ /* label underline focus color */
-/* .input-field input[type=text]:focus {
-   border-bottom: 1px solid ##EA0087;
-   box-shadow: 0 1px 0 0 ##EA0087;
- }
-*/
 
 .button-collapse {
   color: #26a69a;
@@ -159,6 +141,10 @@ footer.page-footer {
 @media only screen and (max-width : 404px) {
   p {
     font-size: 1em;
+  }
+
+  .margin-collapse {
+  margin: inherit;
   }
 
   .hidden {
