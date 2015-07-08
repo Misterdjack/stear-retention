@@ -51,6 +51,9 @@ p {
   height: auto;
 }
 
+.modal {
+  width: 85%;
+}
 /* label color */
 /* .input-field label {
    color: #EA0087;
