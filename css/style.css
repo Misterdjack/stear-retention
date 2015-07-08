@@ -46,8 +46,6 @@ p {
 }
 
 .modal {
-  width: 80%;
-  height: 85%;
   /*helps with scrolling on iOS devices*/
   -webkit-overflow-scrolling: touch;
 }
@@ -92,6 +90,13 @@ p {
   margin: inherit;
   }
 
+  .modal {
+    width: 80%;
+    height: 85%;
+    /*helps with scrolling on iOS devices*/
+    -webkit-overflow-scrolling: touch;
+  }
+
   .parallax-container .section {
     top: 40%;
   }
@@ -110,6 +115,13 @@ p {
 
   .margin-collapse {
   margin: inherit;
+  }
+
+  .modal {
+    width: 80%;
+    height: 85%;
+    /*helps with scrolling on iOS devices*/
+    -webkit-overflow-scrolling: touch;
   }
 
   .hidden {
@@ -147,6 +159,12 @@ footer.page-footer {
   margin: inherit;
   }
 
+  .modal {
+    width: 80%;
+    height: 85%;
+    /*helps with scrolling on iOS devices*/
+    -webkit-overflow-scrolling: touch;
+  }
   .hidden {
     display: none;
   }
