@@ -103,7 +103,7 @@ p {
   }
 
   .margin-collapse {
-  margin: auto;
+  margin: inherit;
   }
 
   .parallax-container .section {
@@ -123,7 +123,7 @@ p {
   }
 
   .margin-collapse {
-  margin: auto;
+  margin: inherit;
   }
 
   .hidden {
