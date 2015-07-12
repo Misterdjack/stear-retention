@@ -10,7 +10,11 @@ if Meteor.isClient
 
     Template.body.events
         'submit #interestform': (e,t) ->
-            console.log e
+            console.log e.target
+            values = {}
+            $.each $('#interestform').serializeArray(), (i, field) ->
+                values[field.name] = field.value
+            console.log "values:",values
             false
 
 #if Meteor.isServer
