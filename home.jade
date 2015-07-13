@@ -6,8 +6,8 @@ head
     link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
     link(rel='icon', href='favicon.ico', type='image/x-icon')
     // CSS
-    link(href='css/materialize.min.css', type='text/css', rel='stylesheet', media='screen,projection')
-    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+    // link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+
 
 body
     .navbar-fixed
@@ -66,50 +66,50 @@ body
                                                 h5.margin-collapse.red-text.text-accent-2
                                                     | Request Type - Check all that apply
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_0(type='checkbox', name='field-interest[]', value='Request a Web Demonstration')
-                                                        label(for='field-interest_0') Request a Web Demonstration
+                                                        input#interest_0(type='checkbox', name='request', value='Request a Web Demonstration')
+                                                        label(for='interest_0') Request a Web Demonstration
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_1(type='checkbox', name='field-interest[]', value='Request Early Alert Information')
-                                                        label(for='field-interest_1') Request Early Alert Information
+                                                        input#interest_1(type='checkbox', name='request', value='Request Early Alert Information')
+                                                        label(for='interest_1') Request Early Alert Information
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_2(type='checkbox', name='field-interest[]', value='Request Retention Services')
-                                                        label(for='field-interest_2') Request Retention Services
+                                                        input#interest_2(type='checkbox', name='request', value='Request Retention Services')
+                                                        label(for='interest_2') Request Retention Services
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_3(type='checkbox', name='field-interest[]', value='Contact Sales / Schedule A Site Visit')
-                                                        label(for='field-interest_3') Contact Sales / Schedule A Site Visit
+                                                        input#interest_3(type='checkbox', name='request', value='Contact Sales / Schedule A Site Visit')
+                                                        label(for='interest_3') Contact Sales / Schedule A Site Visit
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_4(type='checkbox', name='field-interest[]', value='Learn About Joint Development Partnerships')
-                                                        label(for='field-interest_4') Learn About Joint Partnerships
+                                                        input#interest_4(type='checkbox', name='request', value='Learn About Joint Development Partnerships')
+                                                        label(for='interest_4') Learn About Joint Partnerships
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_5(type='checkbox', name='field-interest[]', value='Other (please specify below)')
-                                                        label(for='field-interest_5') Other (please specify below)
+                                                        input#interest_5(type='checkbox', name='request', value='Other (please specify below)')
+                                                        label(for='interest_5') Other (please specify below)
                                                     .row.grey-text.text-darken-4
                                                         .input-field.col.s12
-                                                            input#field-other-requests.form-input(name='field-other-requests', type='text', length='400')
-                                                            label(for='field-other-requests') Other Requests
+                                                            input#other-requests.form-input(name='other-requests', type='text', length='400')
+                                                            label(for='other-requests') Other Requests
                                             .row
                                                 // Text inputs
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
-                                                    input#name.form-input(placeholder='First Name (required)', name='name', minlength='2', type='text', value='', required='')
+                                                    input#name.form-input(placeholder='First Name (required)', name='firstname', minlength='2', type='text', value='', required='')
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
-                                                    input#field-lastname.form-input(placeholder='Last Name (required)', type='text', name='field-lastname', value='', minlength='2', required='')
+                                                    input#lastname.form-input(placeholder='Last Name (required)', type='text', name='lastname', value='', minlength='2', required='')
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-social-domain.prefix
-                                                    input#field-institution.form-input(placeholder='Institution (required)', type='text', name='field-institution', value='', minlength='2', required='')
+                                                    input#institution.form-input(placeholder='Institution (required)', type='text', name='institution', value='', minlength='2', required='')
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-action-account-circle.prefix
-                                                    input#field-title.form-input(placeholder='Title', type='text', name='field-title', value='')
+                                                    input#title.form-input(placeholder='Title', type='text', name='title', value='')
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-communication-phone.prefix
-                                                    input#field-telephone.form-input(placeholder='Telephone', name='field-telephone', type='tel', value='')
+                                                    input#telephone.form-input(placeholder='Telephone', name='telephone', type='tel', value='')
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-communication-email.prefix
                                                     input#email.form-input(placeholder='Email (required)', name='email', type='email', value='', required='')
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-content-create.prefix
-                                                    input#field-message.form-input.materialize-textarea.grey-text.text-darken-4(placeholder='Message', type='text', name='field-message', length='400')
+                                                    input#message.form-input.materialize-textarea.grey-text.text-darken-4(placeholder='Message', type='text', name='message', length='400')
 
                                 // modal content
                                 .modal-footer
@@ -327,5 +327,5 @@ body
     | ./
     // Scripts
     // // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-    script(src='http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js')
+    // script(src='http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js')
     // Stear Retention Program © Designed and developed by Darren Jack https://github.com/Misterdjack
