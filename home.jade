@@ -5,9 +5,6 @@ head
     // Favicon
     link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
     link(rel='icon', href='favicon.ico', type='image/x-icon')
-    // CSS
-    // link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
-
 
 body
     .navbar-fixed
@@ -18,15 +15,15 @@ body
                     i.mdi-navigation-menu
                 ul.right.hide-on-med-and-down
                     li
-                        a(href='#about') About
-                    li
-                        a(href='#programs') Pilot Programs
-                    li
-                        a(href='#services') Services
+                        a.modal-trigger(href='#modal1') Request More Info
                     li
                         a(href='#mission') STEAR Mission
                     li
-                        a.modal-trigger(href='#modal1') Request More Info
+                        a(href='#services') Services
+                    li
+                        a(href='#programs') Pilot Programs
+                    li
+                        a(href='#about') About
                 ul#nav-mobile.side-nav
                     li
                         a.modal-trigger.waves-effect.waves-light(href='#modal1') Request More Info
@@ -43,15 +40,17 @@ body
             .container
                 h2.header.center
                     | STEAR RETENTION
-                    .row
-                    .row
-                    .row
+                    br
+                    br
+                    br
+                    br
+                    br
                     .row.center
                         h5.header.col.s12.light
                             | The Student Tracking Early Alert Retention System, (S.T.E.A.R.) is a robust, campus-wide web-based tool designed to focus on Student Success.
                     .row.center
                         // Launch Form Modal
-                        a#download-button.btn-large.modal-trigger.waves-effect.waves-light.teal.darken-2(href='#modal1')
+                        a#download-button.button-text.btn-large.modal-trigger.waves-effect.waves-light.teal.darken-2(href='#modal1')
                             | Get Started
                             span.hidden  and Request More Info
                         // Form Modal
@@ -87,6 +86,7 @@ body
                                                         .input-field.col.s12
                                                             input#other-requests.form-input(name='other-requests', type='text', length='400')
                                                             label(for='other-requests') Other Requests
+
                                             .row
                                                 // Text inputs
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
@@ -113,13 +113,13 @@ body
 
                                 // modal content
                                 .modal-footer
-                                    button#submit.btn.left.waves-effect.waves-light(type='submit', name='submit', value='')
-                                        i.material-icons Submit
-                                    a.right.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Close
+                                    a#submit.button-text.btn.left.waves-effect.waves-light(type='submit', name='submit', value='')
+                                        | Submit
+                                    a.button-text.right.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!')
+                                        | Close
                         // modal1
                     // row center
-                    br
-                    br
+                    .row
             // container
         .parallax
             img(src='background1.jpg', alt='Unsplashed background img 2')
@@ -308,17 +308,17 @@ body
     footer#about.page-footer.teal.darken-2
         .container
             .row
-                .col.l6.s12.flow-text.footer-text
-                    h5.white-text About Us
-                    p.white-text
+                .col.l6.s12.flow-text
+                    h5.white-text.footer-text About Us
+                    p.white-text.footer-text
                         | STEAR Retention is designed to integrate offices across campus to build a holistic, total student focus. Our strategy is to build the best system to meet your retention goals. Retention strategies will vary from institution to institution, but the data behind your efforts will be consolidated and shared.
-                    p.white-text
+                    p.white-text.footer-text
                         | We listen and respond to your requests. We work with you and your staff to constantly improve our products and to help you reach your goals. We tie people, processes and technology together.
                 .col.l3.s12.right
-                    h5.white-text Contact
+                    h5.white-text.footer-text Contact
                     ul
-                        li.white-text Tel: (877) 325 - 3113
-                        li.white-text
+                        li.white-text.footer-text Tel: (877) 325 - 3113
+                        li.white-text.footer-text
                             a.white-text(href='mailto: info@stear-retention.com', target='_blank') Email: info@stear-retention.com
         .footer-copyright
             .container
