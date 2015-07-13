@@ -37,12 +37,16 @@ nav:hover {
 }
 
 p {
-  line-height: 1.5rem;
-  font-size: .7em;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 .collapsible-header {
   height: auto;
+}
+
+.button-text {
+  font-size: 1.4rem;
 }
 
 .modal {
@@ -77,18 +81,11 @@ p {
 }
 
 .footer-text {
-  font-size: 1.2em;
+  font-size: 1.0rem;
 }
 
 /* Media Queries*/
 @media only screen and (max-width : 992px) {
-  p {
-    font-size: .8em;
-  }
-
-  .margin-collapse {
-  margin: inherit;
-  }
 
   .modal {
     width: 80%;
@@ -106,13 +103,10 @@ p {
   #logo-container {
     height: 0;
   }
+
 }
 
 @media only screen and (max-width : 644px) {
-  p {
-    font-size: .9em;
-  }
-
   .margin-collapse {
   margin: inherit;
   }
@@ -151,10 +145,6 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 404px) {
-  p {
-    font-size: 1em;
-  }
-
   .margin-collapse {
   margin: inherit;
   }

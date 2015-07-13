@@ -18,15 +18,15 @@ body
                     i.mdi-navigation-menu
                 ul.right.hide-on-med-and-down
                     li
-                        a(href='#about') About
-                    li
-                        a(href='#programs') Pilot Programs
-                    li
-                        a(href='#services') Services
+                        a.modal-trigger(href='#modal1') Request More Info
                     li
                         a(href='#mission') STEAR Mission
                     li
-                        a.modal-trigger(href='#modal1') Request More Info
+                        a(href='#services') Services
+                    li
+                        a(href='#programs') Pilot Programs
+                    li
+                        a(href='#about') About
                 ul#nav-mobile.side-nav
                     li
                         a.modal-trigger.waves-effect.waves-light(href='#modal1') Request More Info
@@ -51,7 +51,7 @@ body
                             | The Student Tracking Early Alert Retention System, (S.T.E.A.R.) is a robust, campus-wide web-based tool designed to focus on Student Success.
                     .row.center
                         // Launch Form Modal
-                        a#download-button.btn-large.modal-trigger.waves-effect.waves-light.teal.darken-2(href='#modal1')
+                        a#download-button.button-text.btn-large.modal-trigger.waves-effect.waves-light.teal.darken-2(href='#modal1')
                             | Get Started
                             span.hidden  and Request More Info
                         // Form Modal
@@ -63,30 +63,29 @@ body
                                         .row
                                             .row
                                                 // Checkboxes
-                                                h5.margin-collapse.red-text.text-accent-2
-                                                    | Request Type - Check all that apply
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_0(type='checkbox', name='field-interest[]', value='Request a Web Demonstration')
-                                                        label(for='field-interest_0') Request a Web Demonstration
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_1(type='checkbox', name='field-interest[]', value='Request Early Alert Information')
-                                                        label(for='field-interest_1') Request Early Alert Information
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_2(type='checkbox', name='field-interest[]', value='Request Retention Services')
-                                                        label(for='field-interest_2') Request Retention Services
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_3(type='checkbox', name='field-interest[]', value='Contact Sales / Schedule A Site Visit')
-                                                        label(for='field-interest_3') Contact Sales / Schedule A Site Visit
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_4(type='checkbox', name='field-interest[]', value='Learn About Joint Development Partnerships')
-                                                        label(for='field-interest_4') Learn About Joint Partnerships
-                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
-                                                        input#field-interest_5(type='checkbox', name='field-interest[]', value='Other (please specify below)')
-                                                        label(for='field-interest_5') Other (please specify below)
-                                                    .row.grey-text.text-darken-4
-                                                        .input-field.col.s12
-                                                            input#field-other-requests.form-input(name='field-other-requests', type='text', length='400')
-                                                            label(for='field-other-requests') Other Requests
+                                                h5.margin-collapse.red-text.text-accent-2 Request Type - Check all that apply
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_0(type='checkbox', name='field-interest[]', value='Request a Web Demonstration')
+                                                    label(for='field-interest_0') Request a Web Demonstration
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_1(type='checkbox', name='field-interest[]', value='Request Early Alert Information')
+                                                    label(for='field-interest_1') Request Early Alert Information
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_2(type='checkbox', name='field-interest[]', value='Request Retention Services')
+                                                    label(for='field-interest_2') Request Retention Services
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_3(type='checkbox', name='field-interest[]', value='Contact Sales / Schedule A Site Visit')
+                                                    label(for='field-interest_3') Contact Sales / Schedule A Site Visit
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_4(type='checkbox', name='field-interest[]', value='Learn About Joint Development Partnerships')
+                                                    label(for='field-interest_4') Learn About Joint Partnerships
+                                                p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                    input#field-interest_5(type='checkbox', name='field-interest[]', value='Other (please specify below)')
+                                                    label(for='field-interest_5') Other (please specify below)
+                                                .row.grey-text.text-darken-4
+                                                    .input-field.col.s12
+                                                        input#field-other-requests.form-input(name='field-other-requests', type='text', length='400')
+                                                        label(for='field-other-requests') Other Requests
                                             .row
                                                 // Text inputs
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
@@ -113,9 +112,10 @@ body
 
                                 // modal content
                                 .modal-footer
-                                    button#submit.btn.left.waves-effect.waves-light(type='submit', name='submit', value='')
-                                        i.material-icons Submit
-                                    a.right.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Close
+                                    a#submit.button-text.btn.left.waves-effect.waves-light(type='submit', name='submit', value='')
+                                        | Submit
+                                    a.button-text.right.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!')
+                                        | Close
                         // modal1
                     // row center
                     br
@@ -308,17 +308,17 @@ body
     footer#about.page-footer.teal.darken-2
         .container
             .row
-                .col.l6.s12.flow-text.footer-text
-                    h5.white-text About Us
-                    p.white-text
+                .col.l6.s12.flow-text
+                    h5.white-text.footer-text About Us
+                    p.white-text.footer-text
                         | STEAR Retention is designed to integrate offices across campus to build a holistic, total student focus. Our strategy is to build the best system to meet your retention goals. Retention strategies will vary from institution to institution, but the data behind your efforts will be consolidated and shared.
-                    p.white-text
+                    p.white-text.footer-text
                         | We listen and respond to your requests. We work with you and your staff to constantly improve our products and to help you reach your goals. We tie people, processes and technology together.
                 .col.l3.s12.right
-                    h5.white-text Contact
+                    h5.white-text.footer-text Contact
                     ul
-                        li.white-text Tel: (877) 325 - 3113
-                        li.white-text
+                        li.white-text.footer-text Tel: (877) 325 - 3113
+                        li.white-text.footer-text
                             a.white-text(href='mailto: info@stear-retention.com', target='_blank') Email: info@stear-retention.com
         .footer-copyright
             .container
