@@ -1,12 +1,10 @@
 if Meteor.isClient
-
     Template.body.onRendered ->
          #Materialize event handlers
         $('.button-collapse').sideNav()
         $('.parallax').parallax()
         $('.modal-trigger').leanModal()
-         #jQuery Validate event handler
-        $('#commentForm').validate()
+
 
     Template.body.events
         'submit #interestform': (e,t) ->
@@ -15,20 +13,32 @@ if Meteor.isClient
             $.each $('#interestform').serializeArray(), (i, field) ->
                 values[field.name] = field.value
             console.log "values:",values
+
+            requests = []
+            $.each $('input[name="request"]:checked'), ->
+                requests.push $(@).val()
+            console.log 'Request catagories are: ' + requests.join(', ')
+
+            values.requests = requests
+
+            Meteor.call 'sendEmail', values
             false
 
-#if Meteor.isServer
-    #Meteor.methods
-        #sendEmail: (doc) ->
-         #Important server-side check for security and data integrity
-        #check doc, Schemas.contacts
-         #Build the e-mail text
-        #text = 'Name: ' + doc.name + '\n\n' + 'Email: ' + doc.email + '\n\n\n\n' + doc.message
-        #@unblock()
-        #console.log "about to send the email"
-         #Send the e-mail
-        #Email.send
-            #to: 'someone@somewhere.com'
-            #from: doc.email
-            #subject: 'Website Contact Form - Message From ' + doc.name
-            #text: text
+if Meteor.isServer
+    Meteor.methods
+        sendEmail: (values) ->
+            text = 'Name: ' + values.firstname + ' ' + values.lastname + '\n\n' +
+                    'Institution: ' + values.institution + '\n\n' +
+                    'Email: ' + values.email + '\n\n' +
+                    'Message: ' + values.message + '\n\n' +
+                    'Other Requests: ' + values.otherrequests + '\n\n' +
+                    'Telephone: ' + values.telephone + '\n\n' +
+                    'Title: ' + values.title + '\n\n' +
+                    'Requests: ' + values.requests
+            console.log "about to send the email"
+            console.log values
+            Email.send
+                to: 'repjackson@gmail.com'
+                from: 'test@sender.com'
+                subject: 'Website Contact Form - Message From '
+                text: text
