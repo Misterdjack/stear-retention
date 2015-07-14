@@ -4,6 +4,9 @@ if Meteor.isClient
         $('.button-collapse').sideNav()
         $('.parallax').parallax()
         $('.modal-trigger').leanModal()
+         #jQuery Validate event handler
+        $('#interestform').validate()
+        console.log $('#interestform')
 
 
     Template.body.events

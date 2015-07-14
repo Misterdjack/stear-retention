@@ -9,3 +9,4 @@ mquandalle:jade
 coffeescript
 materialize:materialize
 email
+cramhead:jquery-validate
