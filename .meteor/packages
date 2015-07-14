@@ -9,3 +9,6 @@ mquandalle:jade
 coffeescript
 materialize:materialize
 email
+themeteorchef:jquery-validation
+aldeed:autoform
+aldeed:collection2

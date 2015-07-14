@@ -55,7 +55,12 @@ body
                             span.hidden  and Request More Info
                         // Form Modal
                         #modal1.modal.modal-fixed-footer
+                            // +quickForm schema=contactFormSchema id="contactForm1" type="method" meteormethod="sendEmail"
+                            // +autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"
+                                fieldset
+                                    legend Contact Us
                             form#interestform.col.s12.cmxform(enctype='multipart/form-data', accept-charset='UTF-8')
+                            +autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"
                                 .modal-content
                                     h3.margin-collapse.teal-text.text-darken-2
                                         | Request more info
@@ -65,13 +70,17 @@ body
                                                 h5.margin-collapse.red-text.text-accent-2
                                                     | Request Type - Check all that apply
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        +afQuickField name='visit'
                                                         input#interest_0(type='checkbox', name='request', value='Request a Web Demonstration')
+                                                        +afQuickField name='webdemo'
                                                         label(for='interest_0') Request a Web Demonstration
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
                                                         input#interest_1(type='checkbox', name='request', value='Request Early Alert Information')
+                                                        +afQuickField name='alert'
                                                         label(for='interest_1') Request Early Alert Information
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
                                                         input#interest_2(type='checkbox', name='request', value='Request Retention Services')
+                                                        +afQuickField name='retention'
                                                         label(for='interest_2') Request Retention Services
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
                                                         input#interest_3(type='checkbox', name='request', value='Contact Sales / Schedule A Site Visit')
@@ -79,9 +88,11 @@ body
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
                                                         input#interest_4(type='checkbox', name='request', value='Learn About Joint Development Partnerships')
                                                         label(for='interest_4') Learn About Joint Partnerships
+                                                        +afQuickField name='joint'
                                                     p.margin-collapse.grey-text.text-darken-4.col.s12.m6
                                                         input#interest_5(type='checkbox', name='request', value='Other (please specify below)')
                                                         label(for='interest_5') Other (please specify below)
+                                                        +afQuickField name='other'
                                                     .row.grey-text.text-darken-4
                                                         .input-field.col.s12
                                                             input#other-requests.form-input(name='other-requests', type='text', length='400')
@@ -91,25 +102,31 @@ body
                                                 // Text inputs
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
-                                                    input#name.form-input(placeholder='First Name (required)', name='firstname', minlength='2', type='text', value='', required='')
+                                                    +afQuickField name="lastName" placeholder='Last Name (required)'
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
-                                                    input#lastname.form-input(placeholder='Last Name (required)', type='text', name='lastname', value='', minlength='2', required='')
+                                                    +afQuickField name="institution" placeholder='Institution (required)'
+
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-social-domain.prefix
-                                                    input#institution.form-input(placeholder='Institution (required)', type='text', name='institution', value='', minlength='2', required='')
+                                                    +afQuickField name="title" placeholder='Title'
+
+
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-action-account-circle.prefix
-                                                    input#title.form-input(placeholder='Title', type='text', name='title', value='')
+                                                    +afQuickField name='message' class='form-input materialize-textarea grey-text text-darken-4' placeholder='Message' type='text' name='message' length='400'
+
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-communication-phone.prefix
-                                                    input#telephone.form-input(placeholder='Telephone', name='telephone', type='tel', value='')
+                                                    +afQuickField name="telephone" placeholder='Telephone' name='telephone' type='tel'
+
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-communication-email.prefix
-                                                    input#email.form-input(placeholder='Email (required)', name='email', type='email', value='', required='')
+                                                    +afQuickField name="email" placeholder='Email (required)' name='email' type='email' value='' required=''
+
                                                 .grey-text.text-darken-4.input-field.col.s12
                                                     i.mdi-content-create.prefix
-                                                    input#message.form-input.materialize-textarea.grey-text.text-darken-4(placeholder='Message', type='text', name='message', length='400')
+                                                    +afQuickField name="firstName" id='name' class='form-input' placeholder='First Name (required)'
 
                                 // modal content
                                 .modal-footer
@@ -128,9 +145,9 @@ body
         br
         br
         h3.header.center
-            | IDENTIFY
+            | IDENTIFY |
             span.teal-text.text-darken-2 ENGAGE
-            |  | SUCCEED
+            | | SUCCEED
             .section
                 // Icon Section
                 .row
