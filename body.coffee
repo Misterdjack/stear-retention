@@ -25,11 +25,12 @@ if Meteor.isClient
             values.requests = requests
 
             Meteor.call 'sendEmail', values
-            false
+
 
 if Meteor.isServer
     Meteor.methods
         sendEmail: (values) ->
+            @unblock()
             text = 'Name: ' + values.firstname + ' ' + values.lastname + '\n\n' +
                     'Institution: ' + values.institution + '\n\n' +
                     'Email: ' + values.email + '\n\n' +
@@ -45,3 +46,5 @@ if Meteor.isServer
                 from: 'test@sender.com'
                 subject: 'Website Contact Form - Message From '
                 text: text
+    Meteor.startup ->
+        #process.env.MAIL_URL = 'smtp://postmaster%40stear-retention.com:757a2452d8014505e491446d59638579@smtp.mailgun.org:587'

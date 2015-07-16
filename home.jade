@@ -4,6 +4,7 @@ head
     title Stear Retention
     // Favicon
     link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    script(src='https://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js')
     link(rel='icon', href='favicon.ico', type='image/x-icon')
 
 
@@ -92,7 +93,7 @@ body
                                                 // Text inputs
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
-                                                    input#name.form-input(placeholder='First Name (required)', name='firstname', minlength='2', type='text', value='', required='')
+                                                    input#name.form-input.required(placeholder='First Name (required)', name='firstname', minlength='2', type='text', value='')
                                                 .grey-text.text-darken-4.input-field.col.s12.m6
                                                     i.mdi-action-account-circle.prefix
                                                     input#lastname.form-input(placeholder='Last Name (required)', type='text', name='lastname', value='', minlength='2', required='')
@@ -328,5 +329,4 @@ body
     | ./
     // Scripts
     // // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-    script(src='http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js')
     // Stear Retention Program © Designed and developed by Darren Jack https://github.com/Misterdjack
