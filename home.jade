@@ -1,0 +1,334 @@
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+    title Stear Retention
+    // Favicon
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='favicon.ico', type='image/x-icon')
+
+    // CSS
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+
+body
+    .navbar-fixed
+        nav.white(role='navigation')
+            .nav-wrapper.container
+                a#logo-container.brand-logo.img-responsive(href='#')
+                a.button-collapse(href='#', data-activates='nav-mobile')
+                    i.mdi-navigation-menu
+                ul.right.hide-on-med-and-down
+                    li
+                        a.waves-effect.waves-teal.modal-trigger(href='#modal1') Request More Info
+                    li
+                        a.waves-effect.waves-teal(href='#mission') STEAR Mission
+                    li
+                        a.waves-effect.waves-teal(href='#services') Services
+                    li
+                        a.waves-effect.waves-teal(href='#programs') Pilot Programs
+                    li
+                        a.waves-effect.waves-teal(href='#about') About
+                ul#nav-mobile.side-nav
+                    li
+                        a.modal-trigger.waves-effect.waves-light(href='#modal1') Request More Info
+                    li
+                        a.waves-effect.waves-light(href='#mission') STEAR Mission
+                    li
+                        a.waves-effect.waves-light(href='#services') Services
+                    li
+                        a.waves-effect.waves-light(href='#programs') Pilot Programs
+                    li
+                        a.waves-effect.waves-light(href='#about') About
+    #index-banner.parallax-container.flow-text
+        .section.no-pad-bot
+            .container
+                h2.header.center
+                    | STEAR RETENTION
+                    br
+                    br
+                    br
+                    br
+                    br
+                    .row.center
+                        h5.header.col.s12.light
+                            | The Student Tracking Early Alert Retention System, (S.T.E.A.R.) is a robust, campus-wide web-based tool designed to focus on Student Success.
+                    .row.center
+                        // Launch Form Modal
+                        a#download-button.button-text.btn-large.modal-trigger.waves-effect.waves-light.teal.darken-2(href='#modal1')
+                            | Get Started
+                            span.hidden  and Request More Info
+                        // Form Modal
+                        #modal1.modal.modal-fixed-footer
+                            form#interestform.col.s12.cmxform(enctype='multipart/form-data', accept-charset='UTF-8')
+                                .modal-content
+                                    h3.margin-collapse.teal-text.text-darken-2
+                                        | Request more info
+                                        .container
+                                            .row
+                                                // Checkboxes
+                                                h5.margin-collapse.red-text.text-accent-2
+                                                    | Request Type - Check all that apply
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_0(type='checkbox', name='request', value='Request a Web Demonstration')
+                                                        label(for='interest_0') Request a Web Demonstration
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_1(type='checkbox', name='request', value='Request Early Alert Information')
+                                                        label(for='interest_1') Request Early Alert Information
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_2(type='checkbox', name='request', value='Request Retention Services')
+                                                        label(for='interest_2') Request Retention Services
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_3(type='checkbox', name='request', value='Contact Sales / Schedule A Site Visit')
+                                                        label(for='interest_3') Contact Sales / Schedule A Site Visit
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_4(type='checkbox', name='request', value='Learn About Joint Development Partnerships')
+                                                        label(for='interest_4') Learn About Joint Partnerships
+                                                    p.margin-collapse.grey-text.text-darken-4.col.s12.m6
+                                                        input#interest_5(type='checkbox', name='request', value='Other (please specify below)')
+                                                        label(for='interest_5') Other (please specify below)
+                                                    .row.grey-text.text-darken-4
+                                                        .input-field.col.s12
+                                                            input#other-requests.form-input(name='other-requests', type='text', length='400')
+                                                            label(for='other-requests') Other Requests
+
+                                            .row
+                                                // Text inputs
+                                                .grey-text.text-darken-4.input-field.col.s12.m6
+                                                    i.mdi-action-account-circle.prefix
+                                                    input#name.form-input(placeholder='First Name (required)', name='firstname', minlength='2', type='text', value='', required='')
+                                                .grey-text.text-darken-4.input-field.col.s12.m6
+                                                    i.mdi-action-account-circle.prefix
+                                                    input#lastname.form-input(placeholder='Last Name (required)', type='text', name='lastname', value='', minlength='2', required='')
+                                                .grey-text.text-darken-4.input-field.col.s12
+                                                    i.mdi-social-domain.prefix
+                                                    input#institution.form-input(placeholder='Institution (required)', type='text', name='institution', value='', minlength='2', required='')
+                                                .grey-text.text-darken-4.input-field.col.s12
+                                                    i.mdi-action-account-circle.prefix
+                                                    input#title.form-input(placeholder='Title', type='text', name='title', value='')
+                                                .grey-text.text-darken-4.input-field.col.s12
+                                                    i.mdi-communication-phone.prefix
+                                                    input#telephone.form-input(placeholder='Telephone', name='telephone', type='tel', value='')
+                                                .grey-text.text-darken-4.input-field.col.s12
+                                                    i.mdi-communication-email.prefix
+                                                    input#email.form-input(placeholder='Email (required)', name='email', type='email', value='', required='')
+                                                .grey-text.text-darken-4.input-field.col.s12
+                                                    i.mdi-content-create.prefix
+                                                    input#message.form-input.materialize-textarea.grey-text.text-darken-4(placeholder='Message', type='text', name='message', length='400')
+
+                                // modal content
+                                .modal-footer
+                                    a#submit.button-text.btn.left.waves-effect.waves-light(type='submit', name='submit', value='')
+                                        | Submit
+                                    a.button-text.right.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!')
+                                        | Close
+                        // modal1
+                    // row center
+                    .row
+            // container
+        .parallax
+            img(src='background1.jpg', alt='Unsplashed background img 2')
+    // index banner
+    .container.flow-text
+        br
+        br
+        h3.header.center
+            | IDENTIFY |
+            span.teal-text.text-darken-2 ENGAGE
+            |  | SUCCEED
+            .section
+                // Icon Section
+                .row
+                    .col.s12.l4
+                        .icon-block
+                            h2.center.red-text.text-accent-2
+                                i.mdi-social-school
+                            h5.center.light-green-text.text-accent-4 America’s Knowledge-Based Economy
+                            p.light
+                                | Our country faces a new economic reality, the emergence of the knowledge-based economy. This economy, these “high-value” jobs, require the skills and knowledge attained through collegiate degree programs. The United States is competing globally for these high value jobs and careers and our higher education system must prepare their students for this reality.
+                                span.teal-text.text-darken-2
+                                    | STEAR Retention works with the school administration and key stake holders to identify and assess existing retention programs and to build an effective and responsive retention program.
+                    .col.s12.l4
+                        .icon-block
+                            h2.center.red-text.text-accent-2
+                                i.mdi-action-account-balance
+                            h5.center.blue-text.text-accent-2 Colleges & Universities
+                            p.light
+                                | Legislatures in 31 states have set goals to increase the overall postsecondary attainment and six year graduation rates.  Colleges must prepare an increasing percentage of all high school graduates for these high value careers. The critical need is to close enrollment and attainment gaps for minority, first-generation, low income students and for working adults.
+                                span.teal-text.text-darken-2
+                                    | STEAR Retention can help colleges identify and prepare a broader group of students for the rigors of college and to identify struggling students during the term.
+                    .col.s12.l4
+                        .icon-block
+                            h2.center.red-text.text-accent-2
+                                i.mdi-social-group
+                            h5.center.purple-text.text-darken-3 Students
+                            p.light
+                                | Students attend college as an investment in their future. They want quality training and they must believe their college will help them achieve their goals. Students feel connected to an institution that is vested in their success.  An increasing number of students need additional support to prepare for and transition to college. Student’s often need help and direction at a critical point in their career.
+                                span.teal-text.text-darken-2
+                                    | STEAR Retention enables the student’s success team to help the student understand the steps to success, overcome obstacles and persist through graduation.
+    .parallax-container.valign-wrapper
+        .section.no-pad-bot
+            .container
+                .row.center
+                    h5.header.col.s12.light.valign It takes a campus...
+        .parallax
+            img(src='background3.jpg', alt='Unsplashed background img 3')
+    #mission.container.flow-text
+        .section
+            .row
+                .col.s12.center
+                    .icon-block
+                        h2.center.red-text.text-accent-2
+                            i.mdi-social-school
+                        h5.center.teal-text.text-darken-2 STEAR Mission
+                        p.light
+                            | Our mission is to provide a combination of strategy, software, student success advocates, student support offices and targeted assistance to your institution to promote student success. The resulting student experience becomes one of positive cooperation and communication resulting in a degree and a better life.
+                        ul
+                            li Pre-Identify At-Risk Students
+                            li Create Action Plans
+                            li Create Steps to Success
+    .parallax-container.valign-wrapper
+        .section.no-pad-bot
+            .container
+                .row.center
+                    h5.header.col.s12.light.valign A Retention Program Model designed for your College
+        .parallax
+            img(src='background4.jpg', alt='Unsplashed background img 4')
+    #services.container
+        .section
+            .row
+                .col.s12.center
+                    h3
+                        i.mdi-action-work.red-text.text-accent-2
+                    h4.teal-text.text-darken-2 Services
+                    ul.collapsible.popout.flow-text(data-collapsible='accordion')
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Strategic Retention Planning
+                            .collapsible-body
+                                p
+                                    | “We work with you to create a retention plan tailored for your students, your institutional goals and existing staffing levels. Goals are set for three periods;
+                                ol
+                                    li Immediate/Short Term Goals
+                                    li Intermediate & Ongoing Goals
+                                    li Long Term Goals/ Campus Culture
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Campus Integration
+                            .collapsible-body
+                                p
+                                    | Every student should have a support team. STEAR coordinatesAcademic and Student Affairs staff, offices and programs to identify, engage and assist students. The integrated referral system shares progress across campus.
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Attendance and Academic Alerts
+                            .collapsible-body
+                                ul
+                                    li Initial Attendance Alerts
+                                    li Academic Progress Early Alerts
+                                    li Midterm Grade Alerts
+                                    li Withdrawal Alerts
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Intrusive Advising and Student Interaction
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Student Interaction
+                            .collapsible-body
+                                p
+                                    | When at-risk are identified via data, surveys or early alerts,students can be assigned to skills workshops, learning centers, tutors, mentors and counselors.
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Additional Services
+                            .collapsible-body
+                                p
+                                    | Upon request, STEAR will modify or enhance the retention systemto integrate other campus programs and data.
+    .parallax-container.valign-wrapper
+        .section.no-pad-bot
+            .container
+                .row.center
+                    h5.header.col.s12.light.valign
+                        strong Engage:
+                        | Turn struggling students into successful students.
+        .parallax
+            img(src='background2.jpg', alt='Unsplashed background img 3')
+    #programs.container
+        .section
+            .row
+                .col.s12.center
+                    h3
+                        i.mdi-content-send.red-text.text-accent-2
+                    h4.teal-text.text-darken-2 Programs
+                    ul.collapsible.popout.flow-text(data-collapsible='accordion')
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | High School Transition and Freshmen
+                            .collapsible-body
+                                ul
+                                    li High School to College Dual Credit Programs
+                                    li 2 year to 4 year transfer students Community College \ 4 Year College pairs
+                                    li Transfer students at 4 year colleges\Universities
+                                    li Veterans
+                                    li Faith Based Schools
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Sophomore Year and Upper Classmen
+                            .collapsible-body
+                                ul
+                                    li Freshman Seminars / Workshops
+                                    li Pre-enrollment Remedial and Prep Courses
+                                    li Mentoring and Learning Center Programs
+                                    li TRiO, Gear-Up, Succeed Program
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | At-Risk and Title III, IV & V
+                            .collapsible-body
+                                ul
+                                    li HSI
+                                    li HBCU
+                                    li Disadvantaged
+                                    li Disability
+                        li
+                            .collapsible-header
+                                i.mdi-social-school.light-green-text.text-accent-4
+                                | Pilot Programs
+                            .collapsible-body
+                                p
+                                    | STEAR Retention is offering PilotPrograms for the Spring 2016 term. We will help you implement a program to help more students persist past the freshman year and guide them on the path to graduation. The pilot programs are designed for limited cohorts. Complete the contact form for more information.
+    .parallax-container.valign-wrapper
+        .section.no-pad-bot
+            .container
+                .row.center
+                    h5.header.col.s12.light.valign It takes a campus...
+        .parallax
+            img(src='background5.jpg', alt='Unsplashed background img 5')
+    footer#about.page-footer.teal.darken-2
+        .container
+            .row
+                .col.l6.s12.flow-text
+                    h5.white-text.footer-text About Us
+                    p.white-text.footer-text
+                        | STEAR Retention is designed to integrate offices across campus to build a holistic, total student focus. Our strategy is to build the best system to meet your retention goals. Retention strategies will vary from institution to institution, but the data behind your efforts will be consolidated and shared.
+                    p.white-text.footer-text
+                        | We listen and respond to your requests. We work with you and your staff to constantly improve our products and to help you reach your goals. We tie people, processes and technology together.
+                .col.l3.s12.right
+                    h5.white-text.footer-text Contact
+                    ul
+                        li.white-text.footer-text Tel: (877) 325 - 3113
+                        li.white-text.footer-text
+                            a.white-text(href='mailto: info@stear-retention.com', target='_blank') Email: info@stear-retention.com
+        .footer-copyright
+            .container
+                | 2015 Copywrite -
+                a(href='https://github.com/Misterdjack') Misterdjack
+    | ./
+    // Scripts
+    // // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    // script(src='http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js')
+    // Stear Retention Program © Designed and developed by Darren Jack https://github.com/Misterdjack
