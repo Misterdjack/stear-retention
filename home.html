@@ -58,7 +58,7 @@
           
           <!-- Form Modal -->
           <div id="modal1" class="modal modal-fixed-footer">
-            <form class="col s12 cmxform" id="form_sendemail" role="form">
+            <form class="col s12 cmxform" action="gdForm.php" method="post" name="STEARcontact" target="_blank" id="STEARcontact">
             <div class="modal-content">
               <h3 class="margin-collapse teal-text text-darken-2">Request more info</h4>
               <div class="row">
@@ -66,33 +66,33 @@
                     <!-- Checkboxes -->
                     <h5 class="margin-collapse red-text text-accent-2">Request Type - Check all that apply</h4>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_0" value="Request a Web Demonstration" />
-                      <label for="field-5bda5aad7296584_0">Request a Web Demonstration</label>
+                      <input type="checkbox" name="Request a Web Demonstration" id="Request a Web Demonstration" value="Request a Web Demonstration" />
+                      <label for="Request a Web Demonstration">Request a Web Demonstration</label>
                     </p>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_1" value="Request Early Alert Information" />
-                      <label for="field-5bda5aad7296584_1">Request Early Alert Information</label>
+                      <input type="checkbox" name="Request Early Alert Information" id="Request Early Alert Information" value="Request Early Alert Information" />
+                      <label for="Request Early Alert Information">Request Early Alert Information</label>
                     </p>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_2" value="Request Retention Services" />
-                      <label for="field-5bda5aad7296584_2">Request Retention Services</label>
+                      <input type="checkbox" name="Request Retention Services" id="Request Retention Services" value="Request Retention Services" />
+                      <label for="Request Retention Services">Request Retention Services</label>
                     </p>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_3" value="Contact Sales / Schedule A Site Visit" />
-                      <label for="field-5bda5aad7296584_3">Contact Sales / Schedule A Site Visit</label>
+                      <input type="checkbox" name="Contact Sales / Schedule A Site Visit" id="Contact Sales / Schedule A Site Visit" value="Contact Sales / Schedule A Site Visit" />
+                      <label for="Contact Sales / Schedule A Site Visit">Contact Sales / Schedule A Site Visit</label>
                     </p>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_4" value="Learn About Joint Development Partnerships" />
-                      <label for="field-5bda5aad7296584_4">Learn About Joint Partnerships</label>
+                      <input type="checkbox" name="Learn About Joint Partnerships" id="Learn About Joint Partnerships" value="Learn About Joint Partnerships" />
+                      <label for="Learn About Joint Partnerships">Learn About Joint Partnerships</label>
                     </p>
                     <p class="margin-collapse grey-text text-darken-4 col s12 m6">
-                      <input type="checkbox" name="field-5bda5aad7296584[]" id="field-5bda5aad7296584_5" value="Other (please specify below)" />
-                      <label for="field-5bda5aad7296584_5">Other (please specify below)</label>
+                      <input type="checkbox" name="Other" id="Other" value="Other (please specify below)" />
+                      <label for="Other">Other (please specify below)</label>
                     </p>
                     <div class="row grey-text text-darken-4">
                       <div class="input-field col s12">
-                        <input class="form-input" name="field-b20676bb329bced" id="field-b20676bb329bced" type="text" length="400">
-                        <label for="field-b20676bb329bced">Other Requests</label>
+                        <input class="form-input" name="Other Requests" id="Other Requests" type="text" length="400">
+                        <label for="Other Requests">Other Requests</label>
                       </div>
                     </div>
                   </div>
@@ -100,23 +100,23 @@
                     <!-- Text inputs -->
                     <div class="grey-text text-darken-4 input-field col s12 m6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input placeholder="First Name (required)" class="form-input" id="name" name="name" minlength="2" type="text" value="" required>
+                      <input placeholder="First Name (required)" class="form-input" id="first-name" name="first-name" minlength="2" type="text" value="" required>
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12 m6">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input placeholder="Last Name (required)"class="form-input" type="text" name="field-89f14c7b38765e0" id="field-89f14c7b38765e0" value="" minlength="2" required>
+                      <input placeholder="Last Name (required)"class="form-input" type="text" name="last-name" id="last-name" value="" minlength="2" required>
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-social-domain prefix"></i>
-                      <input placeholder="Institution (required)" class="form-input" type="text" name="field-c818ddd71a48ed7" id="field-c818ddd71a48ed7" value="" minlength="2" required>
+                      <input placeholder="Institution (required)" class="form-input" type="text" name="Institution" id="Institution" value="" minlength="2" required>
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-action-account-circle prefix"></i>
-                      <input placeholder="Title" class="form-input" type="text" name="field-3020295438775c0" id="field-3020295438775c0" value="" >
+                      <input placeholder="Title" class="form-input" type="text" name="title" id="title" value="" >
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-communication-phone prefix"></i>
-                      <input placeholder="Telephone" class="form-input" name="field-c9b460a64f7a9e5" id="field-c9b460a64f7a9e5" type="tel" value="" >
+                      <input placeholder="Telephone" class="form-input" name="telephone" id="telephone" type="tel" value="" >
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-communication-email prefix"></i>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="grey-text text-darken-4 input-field col s12">
                       <i class="mdi-content-create prefix"></i>
-                      <input placeholder="Message" class="form-input materialize-textarea grey-text text-darken-4" type="text" name="field-2e8d5ef89f31075" id="field-2e8d5ef89f31075" length="400">
+                      <input placeholder="Message" class="form-input materialize-textarea grey-text text-darken-4" type="text" name="message" id="message" length="400">
                     </div>
                   </div>
                   <!-- row -->
